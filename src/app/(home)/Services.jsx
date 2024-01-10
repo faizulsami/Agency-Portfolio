@@ -21,11 +21,11 @@ const Services = () => {
                 </div>
                 <div className='p-5 text-center bg-slate-600 rounded-2xl'>
                     <h2 className='text-xl font-semibold py-4 '>Logo Design</h2>
-                    <p>Creating unique, memorable logos that encapsulate your brand's identity, making a lasting impression on your audience.</p>
+                    <p>Creating unique, memorable logos that encapsulate your brands identity, making a lasting impression on your audience.</p>
                 </div>
                 <div className='p-5 text-center bg-slate-600 rounded-2xl'>
                     <h2 className='text-xl font-semibold py-4 '>Search Engine Optimization</h2>
-                    <p>Enhancing your website's visibility on search engines through strategic SEO practices, driving organic traffic and growth.</p>
+                    <p>Enhancing your websites visibility on search engines through strategic SEO practices, driving organic traffic and growth.</p>
                 </div>
                 <div className='p-5 text-center bg-slate-600 rounded-2xl'>
                     <h2 className='text-xl font-semibold py-4 '>Web Hosting</h2>
