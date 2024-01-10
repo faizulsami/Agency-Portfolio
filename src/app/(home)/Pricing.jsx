@@ -1,148 +1,242 @@
 import React, { useState } from 'react';
 
 const Pricing = () => {
-    const [activeTab, setActiveTab] = useState(1);
 
-    const handleTabClick = (tabNumber) => {
-        setActiveTab(tabNumber);
-    };
 
     return (
-        <div className='mt-24 md:my-28'>
-            <div className='text-center'>
-                <h2 className='text-4xl font-semibold'>
-                    Pricing that fits all
-                </h2>
-                <p>
-                    Web Design Rates Transparent, Competitive Pricing
-                </p>
-            </div>
+        <div className='mt-24 md:my-28 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 text-center gap-5 lg:text-left '>
 
-            <div>
-                <div className="mt-12 flex justify-center gap-5">
-                    <button
-                        className={`py-2 px-4 rounded-lg  ${activeTab === 1 ? ' bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
-                            }`}
-                        onClick={() => handleTabClick(1)}
-                    >
+                <div className='border-2 lg::w-80 rounded-xl py-5 p-10' >
+                    <h2>
                         Basic
-                    </button>
-                    <button
-                        className={`py-2 px-4 rounded-lg  ${activeTab === 2 ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
-                            }`}
-                        onClick={() => handleTabClick(2)}
-                    >
-                        Advance
-                    </button>
+                    </h2>
+                    <p className='text-4xl py-3'> 1500</p>
+
+                    <p>
+
+                    </p>
+
+                    <table className='flex justify-center lg:justify-start'>
+                        <tbody >
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance and clean layout</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Up to 15 pages of content</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Best graphics and images</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Mobile-responsive design</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance contact form</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>1 Year premium Support</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+                        <div className=' border rounded-full bg-white flex py-1 items-center  px-4'>
+                            <p>Start for free</p>
+                            <button >
+                                <svg
+                                    className=" h-8 ml-2 "
+                                    viewBox="0 0 74 74"
+                                    fill="none"
+                                >
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" strokeWidth="3"></circle>
+                                    <path
+                                        d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                        fill="black"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="mt-4">
-                    {activeTab === 1 && (
-                        <div>
-                            <div className='border-4 rounded-lg border-slate-600 lg:ps-20 gap-5 p-5 lg:grid grid-cols-2 '>
-                                <div>
-                                    <div className='text-center md:pt-10'>
-                                        <h3>
-                                            Basic
-                                        </h3>
-                                        <p className='text-6xl  font-semibold py-4'>1500$</p>
-                                    </div>
-                                    <div>
-                                        <p className='md:text-xl text-center'>
-                                            a outranging website that shows your brand quality and a super fast and well-designed website
-                                        </p>
-                                    </div>
-                                </div>
+                <div className='border-2 lg::w-80rounded-xl py-5 p-10' >
+                    <h2>
+                        Basic
+                    </h2>
+                    <p className='text-4xl py-3'> 1500</p>
 
-                                <div className='pt-10 flex justify-center'>
-                                    <table className='grid gap-y-3  md:text-xl'>
-                                        <tbody>
-                                            <tr>
-                                                <td>✔️</td>
-                                                <td>Advance and clean layout</td>
-                                            </tr>
-                                            <tr>
-                                                <td>✔️</td>
-                                                <td>Up to 15 pages of content</td>
-                                            </tr>
-                                            <tr>
-                                                <td>✔️</td>
-                                                <td>Best graphics and images</td>
-                                            </tr>
-                                            <tr>
-                                                <td>✔️</td>
-                                                <td>Mobile-responsive design</td>
-                                            </tr>
-                                            <tr>
-                                                <td>✔️</td>
-                                                <td>Advance contact form</td>
-                                            </tr>
-                                            <tr>
-                                                <td>✔️</td>
-                                                <td>1 Year premium Support</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                    {activeTab === 2 && (
-                        <div className='border-4 rounded-lg border-slate-600 lg:ps-20 gap-5 p-5 lg:grid grid-cols-2 '>
-                            <div>
-                                <div className='text-center md:pt-16'>
-                                    <h3>
-                                        Advance
-                                    </h3>
-                                    <p className='text-6xl  font-semibold py-4'>5999$</p>
-                                </div>
-                                <div>
-                                    <p className='md:text-xl text-center'>
-                                        Create a Next-Level Website with complete customization options, elevating your brand to the next level
-                                    </p>
-                                </div>
-                            </div>
+                    <p>
 
-                            <div className='pt-10 flex justify-center'>
-                                <table className='grid gap-y-3  md:text-xl'>
-                                    <tbody>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>E-commerce Integration</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Up to 50 pages of content</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Security Features</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Advance SEO Optimization</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Advanced UI/UX Design</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Advance Form System</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Membership/Subscription</td>
-                                        </tr>
-                                        <tr>
-                                            <td>✔️</td>
-                                            <td>Scalability & Performance</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </p>
+
+                    <table className='flex justify-center lg:justify-start'>
+                        <tbody>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance and clean layout</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Up to 15 pages of content</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Best graphics and images</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Mobile-responsive design</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance contact form</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>1 Year premium Support</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+                        <div className=' border rounded-full bg-white flex py-1 items-center  px-4'>
+                            <p>Start for free</p>
+                            <button >
+                                <svg
+                                    className=" h-8 ml-2 "
+                                    viewBox="0 0 74 74"
+                                    fill="none"
+                                >
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" strokeWidth="3"></circle>
+                                    <path
+                                        d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                        fill="black"
+                                    ></path>
+                                </svg>
+                            </button>
                         </div>
-                    )}
+                    </div>
+                </div>
+
+                <div className='border-2 lg::w-80  rounded-xl py-5 p-10 ' >
+                    <h2>
+                        Basic
+                    </h2>
+                    <p className='text-4xl py-3'> 1500</p>
+
+                    <p>
+
+                    </p>
+
+                    <table className='flex justify-center lg:justify-start'>
+                        <tbody>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance and clean layout</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Up to 15 pages of content</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Best graphics and images</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Mobile-responsive design</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance contact form</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>1 Year premium Support</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+                        <div className=' border rounded-full bg-white flex py-1 items-center  px-4'>
+                            <p>Start for free</p>
+                            <button >
+                                <svg
+                                    className=" h-8 ml-2 "
+                                    viewBox="0 0 74 74"
+                                    fill="none"
+                                >
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" strokeWidth="3"></circle>
+                                    <path
+                                        d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                        fill="black"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className='border-2  lg::w-80 rounded-xl py-5 p-10 ' >
+                    <h2>
+                        Basic
+                    </h2>
+                    <p className='text-4xl py-3'> 1500</p>
+
+                    <p>
+
+                    </p>
+
+                    <table className='flex justify-center lg:justify-start'>
+                        <tbody>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance and clean layout</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Up to 15 pages of content</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Best graphics and images</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Mobile-responsive design</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>Advance contact form</td>
+                            </tr>
+                            <tr>
+                                <td>✔️</td>
+                                <td>1 Year premium Support</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+                        <div className=' border rounded-full bg-white flex py-1 items-center  px-4'>
+                            <p>Start for free</p>
+                            <button >
+                                <svg
+                                    className=" h-8 ml-2 "
+                                    viewBox="0 0 74 74"
+                                    fill="none"
+                                >
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" strokeWidth="3"></circle>
+                                    <path
+                                        d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                        fill="black"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
