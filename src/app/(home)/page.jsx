@@ -10,7 +10,7 @@ import Services from "./Services";
 const HomePage = () => {
 
   return (
-    <div className=" bg-gradient-to-r from-gray-700 to-gray-900" >
+    <div className=" bg-gray-700" >
       <div className="container mx-auto p-3">
         <Hero />
         <Services />
