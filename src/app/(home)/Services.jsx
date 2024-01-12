@@ -2,8 +2,25 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <div >
-            <div className='text-center py-5 md:py-10'>
+        <section className='my-10 border p-2' >
+            <div className='grid grid-cols-1 md:grid-cols-12  '>
+                <div className='py-16 md:p-10 col-span-8'>
+                    <h2>
+                        Local and international Jobs
+                    </h2>
+                    <p className='text-4xl md:text-6xl py-5'>
+                        Local and international Jobs
+                    </p>
+                    <p>
+                    Crafting visually stunning and user-friendly websites that effectively communicate your brand and engage your audience
+                    </p>
+                </div>
+                <div className='col-span-4 bg-white text-center p-10 md:py-16'>
+                    <p className='text-7xl'>💋</p>
+                </div>
+            </div>
+
+            {/* <div className='text-center py-5 md:py-10'>
                 <h2 className='text-4xl font-semibold'>Services</h2>
                 <p >Empowering Your Digital Journey with Our Expert Web Services</p>
             </div>
@@ -37,8 +54,8 @@ const Services = () => {
                 </div>
 
 
-            </div>
-        </div>
+            </div> */}
+        </section>
     );
 };
 
