@@ -1,4 +1,5 @@
 "use client"
+import Navbar from "@/components/Navbar";
 import Frequently from "./Frequently";
 import Hero from "./Hero";
 import Pricing from "./Pricing";
@@ -10,8 +11,9 @@ import Services from "./Services";
 const HomePage = () => {
 
   return (
-    <div className=" bg-gray-700" >
-      <div className="container mx-auto p-3">
+    <div className="" >
+      <div className="background-custom">
+        <Navbar/>
         <Hero />
         <Services />
         <Projects/>
