@@ -11,15 +11,17 @@ import Services from "./Services";
 const HomePage = () => {
 
   return (
-    <div className="" >
-      <div className="background-custom">
-        <Navbar/>
-        <Hero />
+
+    <div className="bg-gray-400">
+      <Navbar />
+      <Hero />
+      <div className="container mx-auto" >
         <Services />
-        <Projects/>
+        <Projects />
         <Pricing />
         <Process />
-        <Frequently /></div>
+        <Frequently />
+        </div>
     </div>
   );
 };

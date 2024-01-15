@@ -2,20 +2,20 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <section className='my-10 border p-2' >
+        <section className='my-10 border p-2 md:p-0' >
             <div className='grid grid-cols-1 md:grid-cols-12  '>
-                <div className='py-16 md:p-10 col-span-8'>
+                <div className=' col-span-8'>
                     <h2>
                         Local and international Jobs
                     </h2>
-                    <p className='text-4xl md:text-6xl py-5'>
+                    <p className='py-10 text-4xl md:text-6xl '>
                         Local and international Jobs
                     </p>
                     <p>
                     Crafting visually stunning and user-friendly websites that effectively communicate your brand and engage your audience
                     </p>
                 </div>
-                <div className='col-span-4 bg-white text-center p-10 md:py-16'>
+                <div className='col-span-4 bg-white text-center  py-10 md:py-24'>
                     <p className='text-7xl'>💋</p>
                 </div>
             </div>
