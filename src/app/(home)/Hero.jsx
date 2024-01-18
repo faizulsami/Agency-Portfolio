@@ -22,12 +22,11 @@ const Hero = () => {
           <div className="blur"></div>
         </div>
   
-        <div className="title font-raleway bottom-10">
+        <div className="title font-raleway bottom-5">
           <p>CRAFT</p>
           <p>WEBSITES</p>
           <p>FOR BUSINESS</p>
         </div>
-  
         <a
           href="https://dribbble.com/shots/23181733-Blurry-Glassmorphic-Modern-Landing-page"
           target="_blank"
