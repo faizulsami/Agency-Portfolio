@@ -6,6 +6,7 @@ import Pricing from "./Pricing";
 import Process from "./Process";
 import Projects from "./Projects";
 import Services from "./Services";
+import AboutPage from "./AboutPage";
 
 
 const HomePage = () => {
@@ -16,12 +17,13 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <div className="container mx-auto" >
+        <AboutPage />
         <Services />
         <Projects />
         <Pricing />
         <Process />
         <Frequently />
-        </div>
+      </div>
     </div>
   );
 };
