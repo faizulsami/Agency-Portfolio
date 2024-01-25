@@ -7,17 +7,20 @@ import Process from "./Process";
 import Projects from "./Projects";
 import Services from "./Services";
 import Footer from "@/components/Footer";
+import AboutPage from "./AboutPage";
 
 
 const HomePage = () => {
 
   return (
-    <div className="" >
-      <div className="background-custom">
-        <Navbar/>
-        <Hero />
+
+    <div className="bg-gray-400">
+      <Navbar />
+      <Hero />
+      <div className="container mx-auto" >
+        <AboutPage />
         <Services />
-        <Projects/>
+        <Projects />
         <Pricing />
         <Process />
         <Frequently />
