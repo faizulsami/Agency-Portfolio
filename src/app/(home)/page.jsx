@@ -6,6 +6,7 @@ import Pricing from "./Pricing";
 import Process from "./Process";
 import Projects from "./Projects";
 import Services from "./Services";
+import Footer from "@/components/Footer";
 
 
 const HomePage = () => {
@@ -19,7 +20,9 @@ const HomePage = () => {
         <Projects/>
         <Pricing />
         <Process />
-        <Frequently /></div>
+        <Frequently />
+        <Footer/>
+        </div>
     </div>
   );
 };
