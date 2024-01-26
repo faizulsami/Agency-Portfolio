@@ -14,7 +14,7 @@ const HomePage = () => {
 
   return (
 
-    <div className="bg-gray-400">
+    <div className="bg-gray-400  font-raleway background-custom text-white">
       <Navbar />
       <Hero />
       <div className="container mx-auto" >
@@ -24,8 +24,9 @@ const HomePage = () => {
         <Pricing />
         <Process />
         <Frequently />
-        <Footer/>
+        
         </div>
+        <Footer/>
     </div>
   );
 };
