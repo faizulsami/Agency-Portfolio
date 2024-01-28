@@ -4,20 +4,23 @@ const Pricing = () => {
 
 
     return (
-        <div className='mt-24 md:my-28 '>
+        <div className='mt-24 md:my-28 px-1 my-28'>
             <div className='grid grid-cols-1  lg:grid-cols-3 text-center gap-5 lg:text-left '>
 
-                <div className='border-2  rounded-xl py-5 p-10' >
-                    <h2>
+                <div className='border-2  rounded-3xl py-10  p-10  w-8/12 ' >
+                    <h2 className='font-bold '>
                         Basic
                     </h2>
+                    <h3 className='text-5xl mt-2 font-bold '>
+                        Free
+                    </h3>
                     <p className='text-4xl py-3'> 1500</p>
 
                     <p>
 
                     </p>
 
-                    <table className='flex justify-center lg:justify-start'>
+                    <table className='my-5 flex justify-center lg:justify-start'>
                         <tbody >
                             <tr>
                                 <td>✔️</td>
@@ -46,7 +49,7 @@ const Pricing = () => {
                         </tbody>
                     </table>
 
-                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+                    <div className='mt-5  flex justify-center items-center lg:justify-start lg:w-44 py-3'>
                         <div className=' border rounded-full  flex py-1 items-center  px-4'>
                             <p>Start for free</p>
                             <button >
@@ -66,18 +69,22 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <div className='border-2 rounded-xl py-5 p-10' >
-                    <h2>
+
+                <div className='border-2  rounded-3xl py-10  p-10  w-8/12 ' >
+                    <h2 className='font-bold '>
                         Basic
                     </h2>
+                    <h3 className='text-5xl mt-2 font-bold '>
+                        Free
+                    </h3>
                     <p className='text-4xl py-3'> 1500</p>
 
                     <p>
 
                     </p>
 
-                    <table className='flex justify-center lg:justify-start'>
-                        <tbody>
+                    <table className='my-5 flex justify-center lg:justify-start'>
+                        <tbody >
                             <tr>
                                 <td>✔️</td>
                                 <td>Advance and clean layout</td>
@@ -104,11 +111,12 @@ const Pricing = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+
+                    <div className='mt-5  flex justify-center items-center lg:justify-start lg:w-44 py-3'>
                         <div className=' border rounded-full  flex py-1 items-center  px-4'>
                             <p>Start for free</p>
                             <button >
-                            <svg
+                                <svg
                                     className=" h-8 ml-2 "
                                     viewBox="0 0 74 74"
                                     fill="none"
@@ -124,18 +132,23 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <div className='border-2   rounded-xl py-5 p-10 ' >
-                    <h2>
+
+
+                <div className='border-2  rounded-3xl py-10  p-10  w-8/12 ' >
+                    <h2 className='font-bold '>
                         Basic
                     </h2>
+                    <h3 className='text-5xl mt-2 font-bold '>
+                        Free
+                    </h3>
                     <p className='text-4xl py-3'> 1500</p>
 
                     <p>
 
                     </p>
 
-                    <table className='flex justify-center lg:justify-start'>
-                        <tbody>
+                    <table className='my-5 flex justify-center lg:justify-start'>
+                        <tbody >
                             <tr>
                                 <td>✔️</td>
                                 <td>Advance and clean layout</td>
@@ -162,11 +175,12 @@ const Pricing = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <div className=' flex justify-center items-center lg:justify-start lg:w-44 py-3'>
+
+                    <div className='mt-5  flex justify-center items-center lg:justify-start lg:w-44 py-3'>
                         <div className=' border rounded-full  flex py-1 items-center  px-4'>
                             <p>Start for free</p>
                             <button >
-                            <svg
+                                <svg
                                     className=" h-8 ml-2 "
                                     viewBox="0 0 74 74"
                                     fill="none"
@@ -181,6 +195,8 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
+
+
 
             </div>
         </div>
