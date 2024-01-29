@@ -4,31 +4,20 @@
 
 
 :root {
-  --text: hsl(0, 0%, 99%);
-  --textDim: hsl(0, 0%, 60%);
-  --background: hsl(0, 0%, 7%);
-  --primary: hsl(155, 100%, 65%);
-  --primaryBg: hsla(155, 100%, 65%, 1%);
-  --primaryHi: hsla(155, 100%, 75%, 25%);
-  --primaryFg: hsl(155, 100%, 85%);
-  --secondary: hsl(156, 51%, 14%);
-  --secondaryFg: hsl(156, 51%, 75%);
-  --secondaryBg: hsla(156, 51%, 14%, 5%);
-  --secondaryHi: hsla(156, 51%, 30%, 50%);
-  --accent: hsl(155, 100%, 94%);
-  --accentBg: hsla(155, 100%, 94%, 1%);
-  --accentHi: hsla(155, 100%, 100%, 25%);
-}
-
-/*------------- price card -----------  */
-
-.cardp {
-  background: rgba(128, 255, 202, 0.19);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.8px);
-  -webkit-backdrop-filter: blur(1.8px);
-  border: 1px solid rgba(128, 255, 202, 0.56);
+    --text: hsl(0, 0%, 99%);
+    --textDim: hsl(0, 0%, 60%);
+    --background: hsl(0, 0%, 7%);
+    --primary: #4dffb5;
+    --primaryBg: hsla(155, 100%, 65%, 1%);
+    --primaryHi: hsla(155, 100%, 75%, 25%);
+    --primaryFg: hsl(155, 100%, 85%);
+    --secondary: hsl(156, 51%, 14%);
+    --secondaryFg: hsl(156, 51%, 75%);
+    --secondaryBg: hsla(156, 51%, 14%, 5%);
+    --secondaryHi: hsla(156, 51%, 30%, 50%);
+    --accent: hsl(155, 100%, 94%);
+    --accentBg: hsla(155, 100%, 94%, 1%);
+    --accentHi: hsla(155, 100%, 100%, 25%);
 }
 
 .background-custom {
@@ -326,38 +315,4 @@ nav a.active {
   background: rgba(0, 0, 0, 0.3);
   color: var(--primary);
   border-radius: 50%;
-}
-
-
-/* ----------carousel-------- */
-
-@keyframes carouselAnim {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(calc(-100% + (6*300px)));
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container .carousel-items {
-    animation: carouselAnim 60s infinite alternate linear;
-  }
-
-  @keyframes carouselAnim {
-    from {
-      transform: translate(0, 0);
-    }
-
-    to {
-      transform: translate(calc(-100% + (5*300px)));
-    }
-  }
-}
-
-.carousel-focus:hover {
-  transition: all 0.8s;
-  transform: scale(1.1);
 }

@@ -24,7 +24,6 @@ const HomePage = () => {
         <Pricing />
         <Process />
         <Frequently />
-        
         </div>
         <Footer/>
     </div>
