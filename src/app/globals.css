@@ -20,6 +20,17 @@
   --accentHi: hsla(155, 100%, 100%, 25%);
 }
 
+/*------------- price card -----------  */
+
+.cardp {
+  background: rgba(128, 255, 202, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  border: 1px solid rgba(128, 255, 202, 0.56);
+}
+
 .background-custom {
   background-color: var(--background);
 }

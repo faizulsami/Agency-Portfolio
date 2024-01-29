@@ -49,8 +49,7 @@ const Pricing = () => {
                         </tbody>
                     </table>
 
-                    <div className='mt-5  flex justify-center items-center lg:justify-start lg:w-44 py-3'>
-                        <div className=' border rounded-full  flex py-1 items-center  px-4'>
+                    <div className=' border rounded-full  flex py-1 items-center justify-between  px-4'>
                             <p>Start for free</p>
                             <button >
                                 <svg
@@ -66,7 +65,7 @@ const Pricing = () => {
                                 </svg>
                             </button>
                         </div>
-                    </div>
+
                 </div>
 
 
