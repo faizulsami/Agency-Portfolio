@@ -21,7 +21,6 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-
             <section className='my-10 bg-red-300 border p-2  md:p-0 top-48 sticky ' >
                 <div className='grid grid-cols-1 md:grid-cols-12  '>
                     <div className=' col-span-8'>
@@ -40,7 +39,6 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-
             <section className='my-10 border bg-lime-500 p-2  md:p-0 top-56 sticky' >
                 <div className='grid grid-cols-1 md:grid-cols-12  '>
                     <div className=' col-span-8'>

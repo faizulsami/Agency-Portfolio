@@ -7,7 +7,7 @@
     --text: hsl(0, 0%, 99%);
     --textDim: hsl(0, 0%, 60%);
     --background: hsl(0, 0%, 7%);
-    --primary: hsl(155, 100%, 65%);
+    --primary: #4dffb5;
     --primaryBg: hsla(155, 100%, 65%, 1%);
     --primaryHi: hsla(155, 100%, 75%, 25%);
     --primaryFg: hsl(155, 100%, 85%);
@@ -282,3 +282,5 @@ nav a.active{
   color: var(--primary);
   border-radius: 50%;
 }
+
+/* Services */
