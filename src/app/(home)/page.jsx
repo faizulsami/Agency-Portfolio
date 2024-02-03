@@ -6,20 +6,28 @@ import Pricing from "./Pricing";
 import Process from "./Process";
 import Projects from "./Projects";
 import Services from "./Services";
+import Footer from "@/components/Footer";
+import AboutPage from "./AboutPage";
 
 
 const HomePage = () => {
 
   return (
-    <div className="" >
-      <div className="background-custom">
-        <Navbar/>
-        <Hero />
+
+    <div className="background-custom text-white font-raleway">
+      <Navbar />
+      <Hero />
+      <div className="container mx-auto" >
+        <AboutPage />
         <Services />
-        <Projects/>
+      </div>
+        <Projects />
         <Pricing />
+      <div className="container mx-auto" >
         <Process />
-        <Frequently /></div>
+        <Frequently />
+      </div>
+        <Footer/>
     </div>
   );
 };
