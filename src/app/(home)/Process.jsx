@@ -31,12 +31,10 @@ const Process = () => {
         <div className="py-5 md:py-16 text-white w-11/12 mx-auto">
             <div className="md:text-center p-2 md:p-0 py-16 md:py-5">
                 <h2 className="font-semibold text-5xl py-2">Our process</h2>
-                <p className="text-lg lg:text-xl py-3 md:w-8/12 lg:w-6/12 md:mx-auto">Our process is designed to ensure that we deliver the highest quality work to our clients. Here are the steps we take in our process:</p>
+                <p className="text-lg lg:text-xl py-3 md:w-8/12 lg:w-6/12 md:mx-auto font-light">Our process is designed to ensure that we deliver the highest quality work to our clients. Here are the steps we take in our process:</p>
             </div>
             <hr className="border-8 border-[#4dffb5] container mx-auto w-9/12" />
-
             <div className="py-5 rounded-xl grid gap-y-9 border-2 border-gray-100 lg:p-5 p-3">
-
                 {
                     process.map(pros => (
                         <div className={`md:flex md:p-16 justify-between py-4 ${pros.num === "06" ? 'w-11/12 mx-auto' : 'border-b-4 border-white w-11/12 mx-auto'}`} key={pros.num}>
@@ -45,7 +43,6 @@ const Process = () => {
                         </div>
                     ))
                 }
-
             </div>
         </div>
     );

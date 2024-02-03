@@ -14,17 +14,19 @@ const HomePage = () => {
 
   return (
 
-    <div className=" background-custom text-white font-raleway">
+    <div className="background-custom text-white font-raleway">
       <Navbar />
       <Hero />
       <div className="container mx-auto" >
         <AboutPage />
         <Services />
+      </div>
         <Projects />
         <Pricing />
+      <div className="container mx-auto" >
         <Process />
         <Frequently />
-        </div>
+      </div>
         <Footer/>
     </div>
   );

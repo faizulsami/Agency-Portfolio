@@ -1,102 +1,76 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Frequently = () => {
-    const [activeTab, setActiveTab] = useState(1);
+    useEffect(() => {
+        const handleAccordionClick = (e) => {
+            const self = e.currentTarget;
+            const control = self.querySelector('.accordions__control');
+            const content = self.querySelector('.accordions__content');
 
-    const handleTabClick = (tabNumber) => {
-        setActiveTab(tabNumber);
-    };
+            self.classList.toggle('open');
+
+            if (self.classList.contains('open')) {
+                control.setAttribute('aria-expanded', true);
+                content.setAttribute('aria-hidden', false);
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                control.setAttribute('aria-expanded', false);
+                content.setAttribute('aria-hidden', true);
+                content.style.maxHeight = null;
+            }
+        };
+
+        const accordions = document.querySelectorAll('.accordions__item');
+        accordions.forEach(el => {
+            el.addEventListener('click', handleAccordionClick);
+        });
+
+        return () => {
+            accordions.forEach(el => {
+                el.removeEventListener('click', handleAccordionClick);
+            });
+        };
+    }, []); // Empty dependency array ensures this effect runs only once after initial render
 
     return (
-        <div className='py-10 pb-20'>
-            <div className="mt-12 flex justify-center gap-5 pb-10">
-                <button
-                    className={`py-2 px-4 rounded-lg  ${activeTab === 1 ? ' bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
-                        }`}
-                    onClick={() => handleTabClick(1)}
-                >
-                    Pricing
-                </button>
-                <button
-                    className={`py-2 px-4 rounded-lg  ${activeTab === 2 ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
-                        }`}
-                    onClick={() => handleTabClick(2)}
-                >
-                    Adv
-                </button>
-                <button
-                    className={`py-2 px-4 rounded-lg  ${activeTab === 3 ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
-                        }`}
-                    onClick={() => handleTabClick(3)}
-                >
-                    ce
-                </button>  <button
-                    className={`py-2 px-4 rounded-lg  ${activeTab === 4 ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-700'
-                        }`}
-                    onClick={() => handleTabClick(4)}
-                >
-                    nce
-                </button>
+        <section className="process">
+            <div className="text-center font-raleway">
+                <h2 className="font-semibold text-4xl md:text-5xl pb-10">Frequently asked questions</h2>
             </div>
-
-            {activeTab === 1 && (
-                <div className="border bg-red-200 text-white">
-                    <details>
-                        <summary className="border question py-3 px-4 cursor-pointer select-none w-full outline-none text-3xl">What tools do you work with?</summary>
-                        <p className="border pt-1 pb-3 px-4 text-xl">With the HTML5“I work primarily with WordPress and Elementor Pro. These tools allow me to create highly customizable and visually appealing websites with ease. I also use other design and development tools such as Adobe Photoshop,
-                            Figma, and HTML/CSS. Let me know if you have any specific requirements, and I’ll do my best to accommodate them.”</p>
-                    </details>
-                    <details>
-                        <summary className="question py-3 px-4 cursor-pointer select-none w-full">Can I use it?</summary>
-                        <p className="pt-1 pb-3 px-4">Of course. Its yours to use wherever and whenever you like.</p>
-                    </details>
-
+            <div className="process__container font-raleway text-[#121212]">
+                <div className="process__accordions">
+                    <ul className="accordions__list">
+                        <li className="accordions__item">
+                            <button className="accordions__control" aria-expanded="false">
+                                <span className="accordions__title text-lg md:text-2xl">Consultation</span>
+                                <span className="accordions__icon"></span>
+                            </button>
+                            <div className="accordions__content text text-sm md:text-lg " aria-hidden="true">
+                                <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                            </div>
+                        </li>
+                        <li className="accordions__item">
+                            <button className="accordions__control" aria-expanded="false">
+                                <span className="accordions__title text-lg md:text-2xl">Research and Strategy Development</span>
+                                <span className="accordions__icon"></span>
+                            </button>
+                            <div className="accordions__content text text-sm md:text-lg " aria-hidden="true">
+                                <p>In today's marketplace, R&D strategy helps a business take a leading position and keeps it competitive, agile, adaptable, and profitable. The research and development concept is one of the earliest stages in creating a business strategy, but the commercial success of the entire project depends on its successful introduction.</p>
+                            </div>
+                        </li>
+                        <li className="accordions__item">
+                            <button className="accordions__control" aria-expanded="false">
+                                <span className="accordions__title text-lg md:text-2xl ">Implementation</span>
+                                <span className="accordions__icon"></span>
+                            </button>
+                            <div className="accordions__content text text-sm md:text-lg " aria-hidden="true">
+                                <p>Strategy implementation is the process of turning your strategic plan into action. Whether you're executing a new marketing plan to increase sales or introducing a new work management software to increase efficiency—your plan is only as valuable as the implementation.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            )}
-            {activeTab === 2 && (
-                <div className="border bg-red-200 text-white">
-                    <details>
-                        <summary className="border question py-3 px-4 cursor-pointer select-none w-full outline-none text-3xl">What tools ?</summary>
-                        <p className="border pt-1 pb-3 px-4 text-xl">With the HTML5“I work primarily with WordPress and Elementor Pro. These tools allow me to create highly customizable and visually appealing websites with ease. I also use other design and development tools such as Adobe Photoshop,
-                        </p>
-                    </details>
-                    <details>
-                        <summary className="question py-3 px-4 cursor-pointer select-none w-full">Can I use it?</summary>
-                        <p className="pt-1 pb-3 px-4">Of course. Its yours to use wherever and whenever you like.</p>
-                    </details>
-
-                </div>
-            )}
-            {activeTab === 3 && (
-                <div className="border bg-red-200 text-white">
-                    <details>
-                        <summary className="border question py-3 px-4 cursor-pointer select-none w-full outline-none text-3xl">What tools ?</summary>
-                        <p className="border pt-1 pb-3 px-4 text-xl">With the HTML5“I work primarily with WordPress and Elementor Pro. These tools allow me to create highly customizable and visually appealing websites with ease. I also use other design and development tools such as Adobe Photoshop,
-                        </p>
-                    </details>
-                    <details>
-                        <summary className="question py-3 px-4 cursor-pointer select-none w-full">Can I use it?</summary>
-                        <p className="pt-1 pb-3 px-4">Of course. Its yours to use wherever and whenever you like.</p>
-                    </details>
-
-                </div>
-            )}
-            {activeTab === 4 && (
-                <div className="border bg-red-200 text-white">
-                    <details>
-                        <summary className="border question py-3 px-4 cursor-pointer select-none w-full outline-none text-3xl">What tools ?</summary>
-                        <p className="border pt-1 pb-3 px-4 text-xl">With the HTML5“I work primarily with WordPress and Elementor Pro. These tools allow me to create highly customizable and visually appealing websites with ease. I also use other design and development tools such as Adobe Photoshop,
-                        </p>
-                    </details>
-                    <details>
-                        <summary className="question py-3 px-4 cursor-pointer select-none w-full">Can I use it?</summary>
-                        <p className="pt-1 pb-3 px-4">Of course. Its yours to use wherever and whenever you like.</p>
-                    </details>
-
-                </div>
-            )}
-
-        </div>
+            </div>
+        </section>
     );
 };
 
