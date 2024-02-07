@@ -29,8 +29,9 @@ const Pricing = () => {
                                 <li className='cs-li flex items-center'><IoCheckmarkSharp className="me-1 text-[#4dffb5]" size={18} />Aliquid, quasi repellat!</li>
                             </ul>
                         </div>
+                        <button type="button" className="w-10/12 mx-auto text-[#121212] border border-[#4dffb5] hover:bg-[#4dffb5] focus:ring-4 focus:outline-none font-bold rounded-3xl text-sm px-5 py-2.5 text-center mb-5">Lets Talk</button>
                     </div>
-                    <div className="basic box">
+                    <div className="basic box scale-100 lg:scale-110">
                         <h2 className="cs-title text-center py-2 font-semibold text-xl">Standard</h2>
                         <div className="view">
                             <div className="icon">
@@ -50,6 +51,7 @@ const Pricing = () => {
                                 <li className='cs-li flex items-center'><IoCheckmarkSharp className="me-1 text-[#4dffb5]" size={18} />Aliquid, quasi repellat!</li>
                             </ul>
                         </div>
+                        <button type="button" className="w-10/12 mx-auto text-[#121212] border border-[#4dffb5] hover:bg-[#4dffb5] focus:ring-4 focus:outline-none font-bold rounded-3xl text-sm px-5 py-2.5 text-center mb-5">Lets Talk</button>
                     </div>
                     <div className="basic box">
                         <h2 className="cs-title text-center py-2 font-semibold text-xl">Business</h2>
@@ -71,6 +73,7 @@ const Pricing = () => {
                                 <li className='cs-li flex items-center'><IoCheckmarkSharp className="me-1 text-[#4dffb5]" size={18} />Aliquid, quasi repellat!</li>
                             </ul>
                         </div>
+                        <button type="button" className="w-10/12 mx-auto text-[#121212] border border-[#4dffb5] hover:bg-[#4dffb5] focus:ring-4 focus:outline-none font-bold rounded-3xl text-sm px-5 py-2.5 text-center mb-5">Lets Talk</button>
                     </div>
                 </div>
             </div>
