@@ -28,15 +28,18 @@
     --dark-gray: #7D7C7C;
     --black: #000;
 }
-
-.background-custom {
-  background-color: var(--background);
+::-webkit-scrollbar{
+  width: 10px;
 }
-
-.background-custom2 {
-  background-color: var(--primary);
+::-webkit-scrollbar-track{
+  background: #121212;
 }
-
+::-webkit-scrollbar-thumb{
+  background: #4dffb5;
+  border-radius: 3px;
+  height: 20vh;
+}
+/*------------Hero Section--------------------*/
 .hero {
   font-weight: 400;
   background-color: var(--background);
@@ -591,7 +594,22 @@ nav a.active {
 .open .accordions__icon {
   transform: rotate(225deg);
 }
-
+/*----------Services-----------*/
+.cs-bg-services-1{
+  background: linear-gradient(105.89deg, rgb(18, 76, 162) 7.77%, rgb(27, 30, 92) 95.22%);;
+}
+.cs-bg-services-2{
+  background: linear-gradient(105.89deg, rgb(184, 15, 157) 7.77%, rgb(27, 30, 92) 95.22%);
+}
+.cs-bg-services-3{
+  background: linear-gradient(105.89deg, rgb(255, 223, 106) 7.77%, rgb(250, 187, 67) 95.22%);
+}
+.cs-bg-services-4{
+  background: linear-gradient(105.89deg, rgb(136, 64, 255) 7.77%, rgb(3, 2, 74) 95.22%);
+}
+.cs-bg-services-5{
+  background: linear-gradient(102.55deg, rgb(133, 248, 193) 20.86%, rgb(7, 138, 91) 92.2%);
+}
 /*----------Pricing------------*/
 .background-circle {
   height: 50vh;
@@ -616,12 +634,10 @@ nav a.active {
 .box{
   display: flex;
   flex-direction: column;
-  height: 586px;
   width: 300px;
   border-radius: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  
   background: var(--white);
 }
 
@@ -669,7 +685,7 @@ nav a.active {
 }
 
 .description{
-  margin: 4em auto;
+  margin: 3em auto;
   font-size: 0.8em;
   color: #7D7C7C;
 }
