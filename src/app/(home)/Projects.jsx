@@ -42,7 +42,7 @@ const Projects = () => {
                     </div>
                     <div className='rounded-xl w-11/12 mx-auto glass-effect'>
                         <div className='p-5'>
-                            <img className='rounded-2xl border ' src="https://i.ibb.co/x7jV2Kf/Dummy3.png" alt="" />
+                            <img className='rounded-2xl border ' src="https://i.ibb.co/yQf8CgP/Dummy4.png" alt="" />
                         </div>
                         <div className='ps-5 p-3'>
                             <p className='flex gap-1 items-center'><IoLocationSharp />Kamen, Germany</p>
