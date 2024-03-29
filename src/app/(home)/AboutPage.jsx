@@ -37,12 +37,12 @@ const AboutPage = () => {
                         helps businesses succeed on social media. Our team helps businesses
                         succeed on social media.
                     </p>
-                    <div className='my-10'>
+                    <div className='my-10 '>
                         <Swiper
                             onSwiper={setSwiperRef}
                             slidesPerView={isMobile ? 1 : 2} // Adjust slidesPerView based on device size
                             centeredSlides={true}
-                            spaceBetween={50}
+                            spaceBetween={30}
 
                             pagination={{
                                 type: 'fraction',
@@ -51,7 +51,7 @@ const AboutPage = () => {
                             modules={[Pagination, Navigation]}
                             className='mySwiper'
                         >
-                            <SwiperSlide>   <div className='my-10 h-96 w-96 relative '
+                            <SwiperSlide>   <div className='my-10  h-96 w-96 relative '
                                 style={{
                                     backgroundImage: "url(https://lh3.googleusercontent.com/a/ACg8ocLkmKSoo-uVVRR5LbVA-ymhVzn0gsLsvf0VbXyg5rhicy0=s288-c-no)",
                                     backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
@@ -65,7 +65,7 @@ const AboutPage = () => {
                             </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className='my-10 h-96 w-96 relative '
+                                <div className='my-10  h-96 w-96 relative '
                                     style={{
                                         backgroundImage: "url(https://i.ibb.co/kJC4XGT/Sami.png)",
                                         backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
