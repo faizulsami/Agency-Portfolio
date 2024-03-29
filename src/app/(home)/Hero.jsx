@@ -27,7 +27,6 @@ const Hero = () => {
         <p>FOR BUSINESS</p>
       </div>
       <a
-        href="https://dribbble.com/shots/23181733-Blurry-Glassmorphic-Modern-Landing-page"
         target="_blank"
         className="button first"
       >
@@ -35,12 +34,12 @@ const Hero = () => {
         <span className="span-cs"></span>
       </a>
 
-      <a href="https://youtu.be/1pW_sk-2y40" target="_blank" className="button sec">
+      <a  target="_blank" className="button sec">
         <button className="button-cs">Works</button>
         <span className="span-cs"></span>
       </a>
 
-      <a href="https://x.com/juxtopposed" target="_blank" className="button third">
+      <a target="_blank" className="button third">
         <button className="button-cs">Price</button>
         <span className="span-cs"></span>
       </a>
