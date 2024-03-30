@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Services from "./Services";
 import Footer from "@/components/Footer";
 import AboutPage from "./AboutPage";
+import ContactUs from "./ContactUs";
 
 
 const HomePage = () => {
@@ -26,6 +27,7 @@ const HomePage = () => {
       <div className="container mx-auto" >
         <Process />
         <Frequently />
+        <ContactUs/>
       </div>
         <Footer/>
     </div>
