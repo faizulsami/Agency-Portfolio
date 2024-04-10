@@ -1,16 +1,18 @@
 import React, { useRef, useState } from 'react';
+import { motion } from "framer-motion";
+import EarthCanvas from '@/components/canvas/Earth';
 
 const ContactUs = () => {
     const form = useRef();
     const [loading, setLoading] = useState(false);
 
     return (
-        <section className='mx-5'>
-            <h2 className='text-4xl text-yellow-50 text-center mb-10'>Contact us</h2>
-            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                <div>this is for .......</div>
+        <section className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+
+            <motion.div
+                className='flex-[0.75] bg-[#080c11]  border border-[#4dffb5] p-8 rounded-2xl'>
                 <div>
-                    <form ref={form}  className='mt-12 flex flex-col gap-8'>
+                    <form ref={form} className='mt-12 flex flex-col gap-8'>
                         <label className='flex flex-col'>
                             <span className='text-white font-medium mb-4'>Your Name</span>
                             <input
@@ -18,7 +20,7 @@ const ContactUs = () => {
                                 name="from_name"
                                 id="name"
                                 placeholder="What's your good name?"
-                                className='bg-[#112136]  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                className='bg-[#2c3036]  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                 required />
                         </label>
                         <label className='flex flex-col'>
@@ -28,7 +30,7 @@ const ContactUs = () => {
                                 name="from_email"
                                 id="email"
                                 placeholder="What's your web address?"
-                                className='bg-[#112136] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                className='bg-[#2c3036] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                 required />
                         </label>
                         <label className='flex flex-col'>
@@ -38,7 +40,7 @@ const ContactUs = () => {
                                 name='message'
                                 id="message"
                                 placeholder='What you want to say?'
-                                className='bg-[#112136]  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                                className='bg-[#2c3036]  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                                 required />
                         </label>
 
@@ -50,7 +52,15 @@ const ContactUs = () => {
                         </button>
                     </form>
                 </div>
-            </div>
+            </motion.div>
+
+            <motion.div
+
+                className=' xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+            >
+                <EarthCanvas />
+            </motion.div>
+
         </section>
     );
 };

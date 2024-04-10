@@ -11,6 +11,7 @@ import AboutPage from "./AboutPage";
 import ContactUs from "./ContactUs";
 
 
+
 const HomePage = () => {
 
   return (
@@ -22,14 +23,17 @@ const HomePage = () => {
         <AboutPage />
         <Services />
       </div>
-        <Projects />
-        <Pricing />
+      <Projects />
+      <Pricing />
       <div className="container mx-auto" >
         <Process />
         <Frequently />
-        <ContactUs/>
+        <div className='relative z-0'>
+          <ContactUs />
+        </div>
+
       </div>
-        <Footer/>
+      <Footer />
     </div>
   );
 };
