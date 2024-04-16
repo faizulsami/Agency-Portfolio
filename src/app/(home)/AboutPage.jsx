@@ -7,7 +7,7 @@ const AboutPage = () => {
         <section>
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="ps-48 ">
-                    <h2 className="text-4xl md:text-9xl font-semibold">About Us</h2>
+                    <h2 className="text-3xl md:text-9xl font-semibold">About Us</h2>
                     <p>Discovery: We begin by getting to know our clients and their business goals. We conduct a thorough analysis of their target audience, competition, and industry to identify their unique needs.</p>
                 </div>
                 <div className="flex bg-white ms-10 ps-10 py-10 rounded-xl">
