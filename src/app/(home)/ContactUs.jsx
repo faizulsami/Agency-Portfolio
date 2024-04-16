@@ -7,9 +7,15 @@ const ContactUs = () => {
     const [loading, setLoading] = useState(false);
 
     return (
-        <section className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+        <section className={`xl:mt-12 flex xl:flex-row  flex-col gap-5overflow-hidden`}>
+            <div
+                className=' xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+            >
+                <EarthCanvas />
+            </div>
 
-            <motion.div
+            
+            <div
                 className='flex-[0.75] bg-[#080c11]  border border-[#4dffb5] p-8 rounded-2xl'>
                 <div>
                     <form ref={form} className='mt-12 flex flex-col gap-8'>
@@ -52,15 +58,7 @@ const ContactUs = () => {
                         </button>
                     </form>
                 </div>
-            </motion.div>
-
-            <motion.div
-
-                className=' xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-            >
-                <EarthCanvas />
-            </motion.div>
-
+            </div>
         </section>
     );
 };

@@ -19,8 +19,9 @@ const HomePage = () => {
     <div className="bg-[#121212] text-white font-raleway">
       <Navbar />
       <Hero />
+      <AboutPage />
       <div className="container mx-auto" >
-        <AboutPage />
+
         <Services />
       </div>
       <Projects />
