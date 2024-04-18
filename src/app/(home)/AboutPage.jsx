@@ -5,22 +5,53 @@ const AboutPage = () => {
 
     return (
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="ps-48 ">
-                    <h2 className="text-3xl md:text-9xl font-semibold">About Us</h2>
+            <div className="lg:grid grid-cols-3 gap-4 ">
+                <div className=" mx-10 ">
+                    <h2 className="text-4xl md:text-9xl font-semibold">About <span className='text-[#4dffb5]'>Us</span></h2>
                     <p>Discovery: We begin by getting to know our clients and their business goals. We conduct a thorough analysis of their target audience, competition, and industry to identify their unique needs.</p>
                 </div>
-                <div className="flex bg-white ms-10 ps-10 py-10 rounded-xl">
-                    <img className="w-56 h-56" src="https://i.ibb.co/rGDHSJn/431363532-921875276141486-53462139753324018-n.jpg" alt="" />
-                    <img className="w-56 h-56" src="https://i.ibb.co/rGDHSJn/431363532-921875276141486-53462139753324018-n.jpg" alt="" />
+                <div className="col-span-2 md:flex lg:bg-white gap-5  ps-10 py-10 rounded-xl md:mb-10">
+                    <div className="md:flex gap-4">
+                        <div className="text-black">
+                            <h3>
+                                Faizul Sami
+                            </h3>
+                            <p className="border-t-4 border-black">Co-founder</p>
+                        </div>
+                        <div>
+                            <img className="w-72 h-72 rounded-xl" src="./team_img/Sami.webp" alt="" />
+                        </div>
+                    </div>
+                    <img className="w-72 h-72 rounded-xl" src="./team_img/Anik.webp" alt="" />
+                    <img className="w-72 h-72 rounded-xl" src="./team_img/Rihad.webp" alt="" />
                 </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="flex bg-white align items-end">
-                    <img className="w-56 h-56" src="https://i.ibb.co/rGDHSJn/431363532-921875276141486-53462139753324018-n.jpg" alt="" />
-                    <img className="w-56 h-56" src="https://i.ibb.co/rGDHSJn/431363532-921875276141486-53462139753324018-n.jpg" alt="" />
+
+                <div className="col-span-2 md:flex gap-5 lg:bg-white md:justify-end  md:pr-10 py-10 rounded-xl">
+                    <div className="md:flex gap-4">
+                        <div className="text-black">
+                            <h3>
+                                Faizul Sami
+                            </h3>
+                            <p className="border-t-4 border-black">Co-founder</p>
+                        </div>
+                        <div>
+                            <img className="w-72 h-72 rounded-xl" src="./team_img/Ayan.webp" alt="" />
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap gap-4">
+                        <div>
+                            <img className="w-72 h-72 rounded-xl" src="./team_img/Prince.webp" alt="" />
+                        </div>
+                        
+                        <div className=" text-black">
+                            <h3>
+                                Faizul Sami
+                            </h3>
+                            <p className="border-t-4 border-black">Co-founder</p>
+                        </div>
+                    </div>
                 </div>
-                <div>logo</div>
+                <div><img src="./About_Us-_1.webp" alt="" /></div>
             </div>
         </section>
     );
