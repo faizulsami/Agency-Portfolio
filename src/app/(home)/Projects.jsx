@@ -2,6 +2,7 @@ import React from 'react';
 import { IoLocationSharp } from "react-icons/io5";
 import { GiLoveMystery } from "react-icons/gi";
 
+
 const Projects = () => {
     return (
         <section>
@@ -12,7 +13,7 @@ const Projects = () => {
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0'>
                     <div className='rounded-xl w-11/12 mx-auto glass-effect'>
                         <div className='p-5'>
-                            <img className='rounded-2xl border ' src="https://i.ibb.co/Q6z8W3F/Dummy1.png" alt="" />
+                            <img className='rounded-2xl border' src="./project_img/Craflex_Portfolio_2.webp" alt="" />
                         </div>
                         <div className='ps-5 p-3'>
                             <p className='flex gap-1 items-center'><IoLocationSharp />Kamen, Germany</p>
@@ -27,7 +28,7 @@ const Projects = () => {
                     </div>
                     <div className='rounded-xl w-11/12 mx-auto glass-effect'>
                         <div className='p-5'>
-                            <img className='rounded-2xl border ' src="https://i.ibb.co/qWJ8dt9/Dummy2.png" alt="" />
+                            <img className='rounded-2xl border ' src="./project_img/Craflex_Portfolio_1.webp" alt="" />
                         </div>
                         <div className='ps-5 p-3'>
                             <p className='flex gap-1 items-center'><IoLocationSharp />Kamen, Germany</p>
@@ -42,7 +43,7 @@ const Projects = () => {
                     </div>
                     <div className='rounded-xl w-11/12 mx-auto glass-effect'>
                         <div className='p-5'>
-                            <img className='rounded-2xl border ' src="https://i.ibb.co/yQf8CgP/Dummy4.png" alt="" />
+                            <img className='rounded-2xl border ' src="./project_img/upturn.webp" alt="" />
                         </div>
                         <div className='ps-5 p-3'>
                             <p className='flex gap-1 items-center'><IoLocationSharp />Kamen, Germany</p>
