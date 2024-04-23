@@ -19,14 +19,15 @@ const HomePage = () => {
     <div className="bg-[#121212] text-white font-raleway">
       <Navbar />
       <Hero />
-      <AboutPage />
+      
       <div className="container mx-auto" >
-
+      
         <Services />
       </div>
       <Projects />
       <Pricing />
       <div className="container mx-auto" >
+      <AboutPage />
         <Process />
         <Frequently />
         <div className='relative z-0'>
