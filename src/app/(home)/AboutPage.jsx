@@ -1,81 +1,125 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 const AboutPage = () => {
     const [swiperRef, setSwiperRef] = useState(null);
-    const [isMobile, setIsMobile] = useState(false); // Initialize with false
+    const [slidesPerView, setSlidesPerView] = useState(3); // Default to 3 slides
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 1080);
+            if (window.innerWidth < 768) {
+                setSlidesPerView(1); // For mobile, show 1 slider
+            } else if (window.innerWidth < 1024) {
+                setSlidesPerView(2); // For medium screens, show 2 sliders
+            } else if (window.innerWidth < 1280) {
+                setSlidesPerView(2); // For large screens, show 3 sliders
+            } else {
+                setSlidesPerView(2); // For extra-large screens, show 4 sliders
+            }
         };
 
-        // Call handleResize on initial render to set the initial state
+        // Call handleResize on initial load
         handleResize();
 
-        // Add event listener for window resize
+        // Add event listener to handle window resize
         window.addEventListener('resize', handleResize);
 
         // Remove event listener on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []); // Empty dependency array ensures the effect runs only once on mount
+    }, []);
 
     return (
-        <section>
-            <div className='grid ps-3 pr-3 grid-cols-1 md:grid-cols-2 my-24'>
-                <div className='py-5 md:py-0 '>
-                    <h2 className='text-5xl md:text-7xl font-semibold'>About Us</h2>
-                </div>
-                <div>
-                    <h3 className='text-3xl py-5 font-semibold'>
-                        Our team helps businesses succeed on social media
-                    </h3>
-                    <p>
-                        At our company, we believe in the power of social media to drive
-                        success. Our team helps businesses succeed on social media. Our team
-                        helps businesses succeed on social media. Our team helps businesses
-                        succeed on social media.
-                    </p>
-                    <div className='my-10 '>
-                        <Swiper
-                            onSwiper={setSwiperRef}
-                            slidesPerView={isMobile ? 1 : 2}
-                            centeredSlides={true}
-                            spaceBetween={30}
-                            pagination={{
-                                type: 'fraction',
-                            }}
-                            navigation={true}
-                            modules={[Pagination, Navigation]}
-                            className='mySwiper'
-                        >
-                            <SwiperSlide>
-                                <div className='my-10 h-96 w-96 relative' style={{ backgroundImage: "url(https://lh3.googleusercontent.com/a/ACg8ocLkmKSoo-uVVRR5LbVA-ymhVzn0gsLsvf0VbXyg5rhicy0=s288-c-no)", backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                                    <div className='absolute w-full h-full grid content-end text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                                        <h3 className='text-5xl'>Anik</h3>
-                                        <p>Co-founder</p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className='my-10 h-96 w-96 relative' style={{ backgroundImage: "url(https://i.ibb.co/kJC4XGT/Sami.png)", backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                                    <div className='absolute w-full h-full grid content-end text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                                        <h3 className='text-5xl'>Sami</h3>
-                                        <p>Co-founder</p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-                </div>
+        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 px-5 sm:px-10 gap-5 my-10 mt-10'>
+            <div className=' ' >
+                <h2 className="text-3xl md:text-6xl xl:text-8xl font-semibold">About Us</h2>
+                <p>Discovery: We begin by getting to know our clients and their business goals. We conduct a thorough analysis of their target audience, competition, and industry to identify their unique needs.</p>
             </div>
-        </section>
+
+            <div className='my-10 col-span-2 '>
+                <Swiper
+                    onSwiper={setSwiperRef}
+                    slidesPerView={slidesPerView}
+                    watchSlidesProgress={true}
+                    spaceBetween={30}
+                    autoplay={{ delay: 2000 }}
+                    modules={[Autoplay, Pagination, Navigation]}
+                >
+                    <SwiperSlide>
+                        <div>
+                            <div className='flex gap-5 '>
+                                <div>
+                                    <img className='w-32 h-32 rounded-full' src="./team_img/sami.webp" alt="" />
+                                </div>
+                                <div>
+                                    <h2>Kamrul Hasan Anik</h2>
+                                    <p>CEO</p>
+                                </div>
+                            </div>
+                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                        </div>
+                    </SwiperSlide>                  <SwiperSlide>
+                        <div>
+                            <div className='flex gap-5'>
+                                <div>
+                                    <img className='w-32 h-32 rounded-full' src="./team_img/anik.webp" alt="" />
+                                </div>
+                                <div>
+                                    <h2>Kamrul Hasan Anik</h2>
+                                    <p>CEO</p>
+                                </div>
+                            </div>
+                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                        </div>
+                    </SwiperSlide>                  <SwiperSlide>
+                        <div>
+                            <div className='flex gap-5'>
+                                <div>
+                                    <img className='w-32 h-32 rounded-full' src="./team_img/rihad.webp" alt="" />
+                                </div>
+                                <div>
+                                    <h2>Kamrul Hasan Anik</h2>
+                                    <p>CEO</p>
+                                </div>
+                            </div>
+                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                        </div>
+                    </SwiperSlide>                  <SwiperSlide>
+                        <div>
+                            <div className='flex gap-5'>
+                                <div>
+                                    <img className='w-32 h-32 rounded-full' src="./team_img/prince.webp" alt="" />
+                                </div>
+                                <div>
+                                    <h2>Kamrul Hasan Anik</h2>
+                                    <p>CEO</p>
+                                </div>
+                            </div>
+                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                        </div>
+                    </SwiperSlide>                  <SwiperSlide>
+                        <div>
+                            <div className='flex gap-5'>
+                                <div>
+                                    <img className='w-32 h-32 rounded-full' src="./team_img/ayan.webp" alt="" />
+                                </div>
+                                <div>
+                                    <h2>Kamrul Hasan Anik</h2>
+                                    <p>CEO</p>
+                                </div>
+                            </div>
+                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+        </div>
     );
 };
 

@@ -63,7 +63,7 @@ const Services = () => {
             <div className='col-span-8 py-5 lg:py-16 md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl  cs-bg-services-3'>
               <h2 className='px-10 font-bold'>Web Maintenance</h2>
               <div className='px-10 pb-10'>
-                <p className='py-5 md:py-8 lg:py-10 text-xl md:text-2xl lg:text-4xl font-bold'>Web Maintenance (WordPress)</p>
+                <p className='py-5 md:py-8 lg:py-10 text-xl md:text-2xl lg:text-4xl font-bold'>Web Maintenance </p>
                 <p className='leading-6 md:leading-8 text-sm md:text-xl lg:text-2xl font-semibold'>Secure & updated website = success. Get expert maintenance, keep your site thriving</p>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Services = () => {
             <div className='col-span-8 py-5 lg:py-16 md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl cs-bg-services-5'>
               <h2 className='px-10 font-bold'>E-commerce Solutions</h2>
               <div className='px-10 pb-10'>
-                <p className='py-5 md:py-8 lg:py-10 text-xl md:text-2xl lg:text-4xl font-bold'>E-commerce Solutions (WordPress & MERN)</p>
+                <p className='py-5 md:py-8 lg:py-10 text-xl md:text-2xl lg:text-4xl font-bold'>E-commerce Solutions </p>
                 <p className='leading-6 md:leading-8 text-sm md:text-xl lg:text-2xl font-semibold'>Boost sales with a flawless online store. Brand-tailored websites. Thrive digitally.</p>
               </div>
             </div>
