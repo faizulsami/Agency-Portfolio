@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "format:write": "prettier ./ --write \"**.{ts,tsx,md,mdx,js,jsx,json,yaml,cjs,mjs}\" --cache",
+    "format:check": "prettier ./ --check \"**.{ts,tsx,md,mdx,js,jsx,json,yaml,cjs,mjs}\" --cache"
   },
   "dependencies": {
     "@react-three/drei": "^9.105.1",
@@ -23,8 +25,10 @@
     "three": "^0.163.0"
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.28.11",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.3.0"
   }
 }
