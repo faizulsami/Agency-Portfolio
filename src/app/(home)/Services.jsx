@@ -23,9 +23,9 @@ const Services = () => {
   const translateY5 = useTransform(scrollYProgress, [0, 5], [0, -10]);
 
   return (
-    <section>
+    <section id='services' className='pt-4 md:pt-12'>
       <div className='my-10 text-center font-semibold text-3xl md:text-5xl'>
-        <h2>Our <span className='text-[#4dffb5]'>Services</span></h2>
+        <h2 className="font-semibold text-4xl md:text-5xl py-2">Our <span className='text-[#4dffb5]'>Services</span></h2>
       </div>
       <motion.div className='w-10/12 md:w-11/12 lg:w-9/12 mx-auto'>
 
@@ -39,7 +39,7 @@ const Services = () => {
               </div>
             </div>
             <div className='col-span-4 mx-auto'>
-              <img src="https://i.ibb.co/BVdgt98/qmas-custom-icon-2.png" alt="" />
+              <img src="https://i.ibb.co/BVdgt98/qmas-custom-icon-2.png" className='w-8/12 mx-auto' alt="" />
             </div>
           </div>
         </motion.section>
@@ -53,7 +53,7 @@ const Services = () => {
               </div>
             </div>
             <div className='col-span-4 mx-auto'>
-              <img src="https://i.ibb.co/k9R4HTt/qmas-cms-icon-1.png" alt="" />
+              <img src="https://i.ibb.co/k9R4HTt/qmas-cms-icon-1.png" className='w-8/12 mx-auto' alt="" />
             </div>
           </div>
         </motion.section>
@@ -68,7 +68,7 @@ const Services = () => {
               </div>
             </div>
             <div className='col-span-4 mx-auto'>
-              <img src="https://i.ibb.co/bLSksmP/qmas-custom-icon-3.png" className='w-8/12 mx-auto' alt="" />
+              <img src="https://i.ibb.co/bLSksmP/qmas-custom-icon-3.png" className='w-8/12 mx-auto my-4 md:my-0' alt="" />
             </div>
           </div>
         </motion.section>
@@ -81,7 +81,7 @@ const Services = () => {
                 <p className='leading-6 md:leading-8 text-sm md:text-xl lg:text-2xl font-semibold'>SEO & UX magic! We optimize websites for search engines & users, boosting traffic & engagement.</p>
               </div>
             </div>
-            <div className='col-span-4'>
+            <div className='col-span-4 mx-auto'>
               <img src="https://i.ibb.co/qm2PVs2/qmas-custom-icon-6.png" className='w-8/12 mx-auto' alt="" />
             </div>
           </div>
@@ -96,7 +96,7 @@ const Services = () => {
               </div>
             </div>
             <div className='col-span-4 mx-auto'>
-              <img src="https://i.ibb.co/fHyDknQ/qmas-custom-icon-5.png" alt="qmas-custom-icon-5" />
+              <img src="https://i.ibb.co/fHyDknQ/qmas-custom-icon-5.png" className='w-8/12 mx-auto my-4 md:my-0' alt="qmas-custom-icon-5" />
             </div>
           </div>
         </motion.section>
