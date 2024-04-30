@@ -1,6 +1,5 @@
 const Hero = () => {
   return (
-
       <div className="hero">
       <div className="grid">
         <svg
@@ -27,19 +26,19 @@ const Hero = () => {
         <p>FOR BUSINESS</p>
       </div>
       <a
-        target="_blank"
         className="button first"
+        href="#services"
       >
         <button className="button-cs">Services</button>
         <span className="span-cs"></span>
       </a>
 
-      <a  target="_blank" className="button sec">
-        <button className="button-cs">Works</button>
+      <a href="#contact" className="button sec">
+        <button className="button-cs">Contact Us</button>
         <span className="span-cs"></span>
       </a>
 
-      <a target="_blank" className="button third">
+      <a href="#price" className="button third">
         <button className="button-cs">Price</button>
         <span className="span-cs"></span>
       </a>

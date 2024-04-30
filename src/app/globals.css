@@ -28,6 +28,9 @@
     --dark-gray: #7D7C7C;
     --black: #000;
 }
+*{
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar{
   width: 10px;
 }
@@ -418,9 +421,9 @@ nav a.active {
   font-family: sans-serif;
 }
 
-@media (max-width: 767.98) {
+@media only screen and (max-width: 600px) {
   .process {
-    padding: 30px 0 30px 0;
+    padding: 10px 0 10px 0;
   }
 }
 
@@ -618,6 +621,11 @@ nav a.active {
   position: absolute;
   left: -15%;
 }
+@media (max-width:767.98px){
+  .background-circle {
+    display: none;
+  }
+}
 .cs-section{
   display: flex;
   justify-content: center;
@@ -626,11 +634,14 @@ nav a.active {
 
 .content{
   display: flex;
-  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
   width: 1200px;
   margin: 100px;
 }
-
+.shadow-custom {
+  box-shadow: 0 0 20px 1px #4dffb5;
+}
 .box{
   display: flex;
   flex-direction: column;
@@ -639,6 +650,15 @@ nav a.active {
   margin-left: 10px;
   margin-right: 10px;
   background: var(--white);
+}
+.box-2{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: var(--primary);
 }
 
 .cs-title{
@@ -656,6 +676,13 @@ nav a.active {
   padding: 30px 0 20px;
 
   background: var(--white-smoke);
+}
+.view-2{
+  display: block;
+  width: 100%;
+  padding: 30px 0 20px;
+
+  background: var(--primary);
 }
 
 .icon{
@@ -686,7 +713,7 @@ nav a.active {
 
 .description{
   margin: 3em auto;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #7D7C7C;
 }
 
@@ -699,14 +726,14 @@ nav a.active {
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin: 50px auto;
+      margin: 12px auto;
   }
   .basic{
     margin-top: 25px;
 }
 }
 
-/*-------Projects----------*/
+/*-------Projects & Contact Us----------*/
 .glass-effect{
   background: rgba(18, 54, 39, 0.08);
   border-radius: 16px;

@@ -28,8 +28,8 @@ const Process = () => {
     ];
 
     return (
-        <div className="py-5 md:py-16 text-white w-11/12 mx-auto">
-            <div className="md:text-center p-2 md:p-0 py-16 md:py-5">
+        <div id="process" className="pt-4 md:pt-12 text-white w-11/12 mx-auto">
+            <div className="md:text-center p-2 md:p-0 pb-16 md:pb-5">
                 <h2 className="font-semibold text-5xl py-2">Our process</h2>
                 <p className="text-lg lg:text-xl py-3 md:w-8/12 lg:w-6/12 md:mx-auto font-light">Our process is designed to ensure that we deliver the highest quality work to our clients. Here are the steps we take in our process:</p>
             </div>
