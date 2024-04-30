@@ -36,12 +36,12 @@ const AboutPage = () => {
     }, []);
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 px-5 sm:px-10 gap-5 my-10 mt-10'>
-            <div className=' ' >
-                <h2 className="text-3xl md:text-6xl xl:text-8xl font-semibold">About Us</h2>
-                <p>Discovery: We begin by getting to know our clients and their business goals. We conduct a thorough analysis of their target audience, competition, and industry to identify their unique needs.</p>
+        <div id='about' className='pt-10 md:pt-32'>
+            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 px-5 sm:px-10 gap-5 my-10 mt-10'>
+            <div>
+                <h2 className="text-3xl md:text-6xl font-semibold"><span className='text-[#4dffb5]'>About</span> Us</h2>
+                <p><span className='font-bold'>Discovery:</span> We begin by getting to know our clients and their business goals. We conduct a thorough analysis of their target audience, competition, and industry to identify their unique needs.</p>
             </div>
-
             <div className='my-10 col-span-2 '>
                 <Swiper
                     onSwiper={setSwiperRef}
@@ -58,13 +58,14 @@ const AboutPage = () => {
                                     <img className='w-32 h-32 rounded-full' src="./team_img/sami.webp" alt="" />
                                 </div>
                                 <div>
-                                    <h2>Kamrul Hasan Anik</h2>
-                                    <p>CEO</p>
+                                    <h2>Faizul Sami</h2>
+                                    <p className='text-[#4dffb5]'>Co Founder & CEO</p>
                                 </div>
                             </div>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                            <p className='mt-3'>We're a web design agency with a seamless operation, delivering projects on time and within budget. Our clients experience clear communication and transparent development processes.</p>
                         </div>
-                    </SwiperSlide>                  <SwiperSlide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div>
                             <div className='flex gap-5'>
                                 <div>
@@ -72,53 +73,57 @@ const AboutPage = () => {
                                 </div>
                                 <div>
                                     <h2>Kamrul Hasan Anik</h2>
-                                    <p>CEO</p>
+                                    <p className='text-[#4dffb5]'>Co Founder & COO</p>
                                 </div>
                             </div>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                            <p className='mt-3'>We run a smooth operation here, ensuring every project is delivered on time and within budget. Our clients can expect clear communication and a transparent development process.</p>
                         </div>
-                    </SwiperSlide>                  <SwiperSlide>
-                        <div>
-                            <div className='flex gap-5'>
-                                <div>
-                                    <img className='w-32 h-32 rounded-full' src="./team_img/rihad.webp" alt="" />
-                                </div>
-                                <div>
-                                    <h2>Kamrul Hasan Anik</h2>
-                                    <p>CEO</p>
-                                </div>
-                            </div>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
-                        </div>
-                    </SwiperSlide>                  <SwiperSlide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div>
                             <div className='flex gap-5'>
                                 <div>
                                     <img className='w-32 h-32 rounded-full' src="./team_img/prince.webp" alt="" />
                                 </div>
                                 <div>
-                                    <h2>Kamrul Hasan Anik</h2>
-                                    <p>CEO</p>
+                                    <h2>Shahriar Prince </h2>
+                                    <p className='text-[#4dffb5]'>Co Founder & CTO</p>
                                 </div>
                             </div>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                            <p className='mt-3'>Innovation is at the forefront of everything we do. We utilize cutting-edge technologies to build robust and scalable websites that can adapt to the ever-evolving digital landscape.</p>
                         </div>
-                    </SwiperSlide>                  <SwiperSlide>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div>
+                            <div className='flex gap-5'>
+                                <div>
+                                    <img className='w-32 h-32 rounded-full' src="./team_img/rihad.webp" alt="" />
+                                </div>
+                                <div>
+                                    <h2>Rahimul Islam Rihad </h2>
+                                    <p className='text-[#4dffb5]'>Manager</p>
+                                </div>
+                            </div>
+                            <p className='mt-3'>At our core, we believe in fostering genuine connections between brands and their audiences. We don't just build websites, we craft digital experiences that drive results.At our core, we believe in fostering genuine connections between brands and their audiences.</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div>
                             <div className='flex gap-5'>
                                 <div>
                                     <img className='w-32 h-32 rounded-full' src="./team_img/ayan.webp" alt="" />
                                 </div>
                                 <div>
-                                    <h2>Kamrul Hasan Anik</h2>
-                                    <p>CEO</p>
+                                    <h2>Shahriar Alam Ayan </h2>
+                                    <p className='text-[#4dffb5]'>CMO</p>
                                 </div>
                             </div>
-                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae maxime sapiente sequi unde assumenda ab amet facilis numquam. Aliquam vitae voluptates porro hic, recusandae quis cum itaque? Cumque, soluta.</p>
+                            <p className='mt-3'>In today's data-driven world, understanding your target audience is the key. We leverage strategic marketing to ensure your brand resonates with the right people.</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>
             </div>
+        </div>
         </div>
     );
 };
