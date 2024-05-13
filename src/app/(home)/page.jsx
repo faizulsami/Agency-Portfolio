@@ -1,4 +1,3 @@
-"use client"
 import Navbar from "@/components/Navbar";
 import Frequently from "./Frequently";
 import Hero from "./Hero";
@@ -10,9 +9,17 @@ import Footer from "@/components/Footer";
 import AboutPage from "./AboutPage";
 import ContactUs from "./ContactUs";
 
+async function sleep(ms) {
+  return new Promise(function(resolve) {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  })
+}
 
+const HomePage = async () => {
 
-const HomePage = () => {
+  await sleep(1000)
 
   return (
 

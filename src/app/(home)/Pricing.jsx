@@ -1,3 +1,5 @@
+"use client"
+
 import { IoCheckmarkSharp, IoReloadCircleSharp,IoRocketSharp } from "react-icons/io5"
 import { IoIosPause } from "react-icons/io";
 import { FaBuilding,FaInfinity } from "react-icons/fa";
@@ -6,7 +8,14 @@ import { HiChartBar } from "react-icons/hi";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { IoLogoFigma,IoCard,IoPersonSharp } from "react-icons/io5";
 import { AiOutlineMessage } from "react-icons/ai";
+import { useEffect } from "react";
+import Aos from "aos";
+
 const Pricing = () => {
+    useEffect(() => {
+        Aos.init({})
+    }, [])
+
     return (
         <section id="price" className="z-10 pt-10 md:pt-32">
             <div className="background-circle"></div>
@@ -16,7 +25,7 @@ const Pricing = () => {
             </div>
             <div className='cs-section'>
                 <div className="content grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-                    <div className="basic box scale-100">
+                    <div  data-aos="fade-right" className="basic box scale-100">
                         <h2 className="cs-title text-center py-2 font-semibold text-xl">Standard</h2>
                         <div className="view">
                             <div className="icon">
@@ -38,7 +47,7 @@ const Pricing = () => {
                         </div>
                         <button type="button" className="w-10/12 mx-auto text-[#121212] border border-[#4dffb5] hover:bg-[#4dffb5] font-bold rounded-3xl text-sm px-5 py-2.5 text-center mb-5">Lets Talk</button>
                     </div>
-                    <div className="basic box-2 shadow-custom lg:scale-105">
+                    <div  data-aos="fade-left" className="basic box-2 shadow-custom lg:scale-105">
                         <h2 className="cs-title text-center py-2 font-semibold text-xl">Business</h2>
                         <div className="view-2">
                             <div className="icon">
