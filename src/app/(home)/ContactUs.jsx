@@ -1,12 +1,18 @@
 "use client"
 
 import React, { useRef, useState } from 'react';
-import EarthCanvas from '@/components/canvas/Earth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
+import dynamic from 'next/dynamic'
+
+
+const EarthCanvas = dynamic(() => import('@/components/canvas/Earth'), { ssr: false })
 
 const ContactUs = () => {
+    
+
+
     const form = useRef();
     const [loading, setLoading] = useState(false);
 

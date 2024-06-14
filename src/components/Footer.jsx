@@ -66,7 +66,7 @@ const Footer = () => {
           <li>
             <a
               className="text-[#4dffb5] hover:text-white"
-              href="/"
+              href="https://www.linkedin.com/company/craflex/"
               rel="noreferrer"
               target="_blank"
             >

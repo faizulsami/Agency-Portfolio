@@ -9,17 +9,11 @@ import Footer from "@/components/Footer";
 import AboutPage from "./AboutPage";
 import ContactUs from "./ContactUs";
 
-async function sleep(ms) {
-  return new Promise(function(resolve) {
-    setTimeout(() => {
-      resolve();
-    }, ms);
-  })
-}
+
 
 const HomePage = async () => {
 
-  await sleep(1000)
+
 
   return (
 

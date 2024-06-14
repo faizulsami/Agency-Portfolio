@@ -37,7 +37,8 @@ const Process = () => {
             <div className="py-5 rounded-xl grid gap-y-9 border-2 border-gray-100 lg:p-5 p-3">
                 {
                     process.map(pros => (
-                        <div className={`md:flex md:p-16 justify-between py-4 ${pros.num === "06" ? 'w-11/12 mx-auto' : 'border-b-4 border-white w-11/12 mx-auto'}`} key={pros.num}>
+                        <div  data-aos="fade-up"
+                        data-aos-duration="2000"  className={`md:flex md:p-16 justify-between py-4 ${pros.num === "06" ? 'w-11/12 mx-auto' : 'border-b-4 border-white w-11/12 mx-auto'}`} key={pros.num}>
                             <p className="md:text-center pb-5 text-7xl md:text-8xl lg:text-9xl font-bold">{pros.num}</p>
                             <p className="md:ps-16 text-lg  lg:text-2xl flex justify-center items-center">{pros.text}</p>
                         </div>

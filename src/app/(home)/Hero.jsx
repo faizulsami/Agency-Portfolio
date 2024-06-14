@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="blur"></div>
         </div>
         <div className="title font-raleway bottom-5 " data-aos="fade-up"
-                        data-aos-duration="4000">
+                        data-aos-duration="1000">
           <p>CRAFT</p>
           <p>WEBSITES</p>
           <p>FOR BUSINESS</p>

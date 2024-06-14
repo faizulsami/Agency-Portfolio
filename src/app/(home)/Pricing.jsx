@@ -1,4 +1,4 @@
-"use client"
+
 
 import { IoCheckmarkSharp, IoReloadCircleSharp,IoRocketSharp } from "react-icons/io5"
 import { IoIosPause } from "react-icons/io";
@@ -8,13 +8,9 @@ import { HiChartBar } from "react-icons/hi";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { IoLogoFigma,IoCard,IoPersonSharp } from "react-icons/io5";
 import { AiOutlineMessage } from "react-icons/ai";
-import { useEffect } from "react";
-import Aos from "aos";
 
 const Pricing = () => {
-    useEffect(() => {
-        Aos.init({})
-    }, [])
+
 
     return (
         <section id="price" className="z-10 pt-10 md:pt-32">
@@ -31,9 +27,7 @@ const Pricing = () => {
                             <div className="icon">
                                 <img src="https://i.postimg.cc/DzrTN72Z/airplane.png" alt="airplane" />
                             </div>
-                            <div className="cost">
-                                <p className="text-[#123627] text-5xl font-semibold">$800</p>
-                            </div>
+
                         </div>
                         <div className="description">
                             <ul className='cs-ul grid gap-4 text-sm font-semibold'>
@@ -48,17 +42,15 @@ const Pricing = () => {
                         <button type="button" className="w-10/12 mx-auto text-[#121212] border border-[#4dffb5] hover:bg-[#4dffb5] font-bold rounded-3xl text-sm px-5 py-2.5 text-center mb-5">Lets Talk</button>
                     </div>
                     <div  data-aos="fade-left" className="basic box-2 shadow-custom lg:scale-105">
-                        <h2 className="cs-title text-center py-2 font-semibold text-xl">Business</h2>
+                        <h2 className="cs-title text-center py-2 font-semibold text-xl  pt-3">Business</h2>
                         <div className="view-2">
                             <div className="icon">
                                 <img src="https://i.postimg.cc/wvFd6FRY/startup.png" alt="startup" />
                             </div>
-                            <div className="cost">
-                                <p className="text-[#123627] text-5xl font-semibold">$1500</p>
-                            </div>
+
                         </div>
                         <div className="description">
-                            <ul className='cs-ul grid gap-4 text-sm font-semibold'>
+                            <ul className='cs-ul grid gap-5 text-sm font-semibold '>
                                 <li className='cs-li flex items-center text-[#123627]'><IoRocketSharp className="me-2 text-[#123627]" size={20} />Everything from Standard Plan</li>
                                 <li className='cs-li flex items-center text-[#123627]'><FaCreditCard className="me-2 text-[#123627]" size={20} />Transactional Sites</li>
                                 <li className='cs-li flex items-center text-[#123627]'><HiChartBar className="me-2 text-[#123627]" size={20} />High Conversion Landing Pages</li>

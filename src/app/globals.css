@@ -694,13 +694,6 @@ nav a.active {
   width: 100px;
 }
 
-.cost{
-  display: flex;
-  justify-content:center;
-  flex-direction: row;
-  margin-top: 10px;
-  color: #121212;
-}
 
 .detail{
   margin: auto 0 auto 5px;
@@ -743,22 +736,6 @@ nav a.active {
 }
 
 
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\swiper */
-.append-buttons {
-  text-align: center;
-  margin-top: 20px;
-}
 
-.append-buttons button {
-  display: inline-block;
-  cursor: pointer;
-  border: 1px solid #007aff;
-  color: #007aff;
-  text-decoration: none;
-  padding: 4px 10px;
-  border-radius: 4px;
-  margin: 0 10px;
-  font-size: 13px;
-}
 
 
