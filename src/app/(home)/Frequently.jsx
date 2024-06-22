@@ -48,10 +48,12 @@ const Frequently = () => {
     return (
         <section>
             <div className="text-center font-raleway mt-16">
-                <h2 className="font-semibold text-3xl md:text-5xl pb-6 md:pb-10">
+                <h2 data-aos="fade-up"
+                    data-aos-duration="1000" className="font-semibold text-3xl md:text-5xl pb-6 md:pb-10">
                     Frequently asked questions
                 </h2>
-                <div className="md:flex gap-2 md:gap-3 justify-center">
+                <div data-aos="fade-up"
+                    data-aos-duration="1000" className="md:flex gap-2 md:gap-3 justify-center">
                     <button
                         type="button"
                         className={`rounded-lg font-bold text-xs md:text-sm mr-3 md:mr-0 px-5 py-2.5 text-center mb-5 ${activeTab === 1

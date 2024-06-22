@@ -10,7 +10,7 @@ import dynamic from 'next/dynamic'
 const EarthCanvas = dynamic(() => import('@/components/canvas/Earth'), { ssr: false })
 
 const ContactUs = () => {
-    
+
 
 
     const form = useRef();
@@ -42,7 +42,8 @@ const ContactUs = () => {
 
     return (
         <section>
-            <h2  className='my-10 text-center font-semibold text-3xl md:text-5xl'>Contact <span className='text-[#4dffb5]'>Us</span></h2>
+            <h2 data-aos="fade-up"
+                data-aos-duration="1000" className='my-10 text-center font-semibold text-3xl md:text-5xl'>Contact <span className='text-[#4dffb5]'>Us</span></h2>
             <div id='contact' className="xl:mt-12 flex xl:flex-row flex-col gap-5 overflow-hidden pt-4 md:pt-12">
                 <ToastContainer />
                 <div

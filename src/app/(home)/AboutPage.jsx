@@ -60,7 +60,7 @@ const AboutPage = () => {
                 <div className='my-10 col-span-2'>
                     <Swiper
                         spaceBetween={30}
-                        autoplay={{ delay: 2000 }}
+                        autoplay={{ delay: 3000 }}
                         modules={[Autoplay, Pagination, Navigation]}
                         pagination={{ clickable: true }}
                         breakpoints={{
@@ -76,11 +76,11 @@ const AboutPage = () => {
                                     <div className='flex gap-5'>
                                         <div>
                                             <Image
-                                                className='w-32 h-32 rounded-full'
+                                                className='rounded-full'
                                                 src={member.img}
                                                 alt={member.name}
-                                                width={128}
-                                                height={128}
+                                                width={100}
+                                                height={100}
                                             />
                                         </div>
                                         <div>

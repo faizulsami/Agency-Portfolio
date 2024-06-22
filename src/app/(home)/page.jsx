@@ -17,18 +17,21 @@ const HomePage = async () => {
 
   return (
 
-    <div className="bg-[#121212] text-white font-raleway">
+    <div className="bg-[#121212] text-white font-raleway ">
       <Navbar />
       <Hero />
-      
+
       <div className="container mx-auto" >
-      
+
         <Services />
       </div>
-      <Projects />
-      <Pricing />
+
+      <div className="overflow-hidden">
+        <Projects />
+        <Pricing />
+      </div>
       <div className="container mx-auto" >
-      <AboutPage />
+        <AboutPage />
         <Process />
         <Frequently />
         <div className='relative z-0'>

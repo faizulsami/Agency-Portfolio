@@ -19,7 +19,7 @@ const Projects = () => {
                     <h2 className="font-semibold text-4xl md:text-5xl">Made by <span className='text-[#4dffb5]' >Craflex</span></h2>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0'>
-                    <div className='rounded-xl w-11/12 mx-auto glass-effect'>
+                    <div data-aos="fade-right" className='rounded-xl w-11/12 mx-auto glass-effect'>
                         <div className='p-5'>
                             <img className='rounded-2xl border' src="./project_img/Craflex_Portfolio_2.webp" alt="" />
                         </div>
@@ -49,7 +49,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='rounded-xl w-11/12 mx-auto glass-effect'>
+                    <div data-aos="fade-left" className='rounded-xl w-11/12 mx-auto glass-effect'>
                         <div className='p-5'>
                             <img className='rounded-2xl border ' src="./project_img/upturn.webp" alt="" />
                         </div>

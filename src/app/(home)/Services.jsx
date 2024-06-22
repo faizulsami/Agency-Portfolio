@@ -30,13 +30,14 @@ const Services = () => {
 
   return (
     <section id='services' className='pt-4 md:pt-12'>
-      <div className='my-10 text-center font-semibold text-3xl md:text-5xl'>
+      <div data-aos="fade-up"
+        data-aos-duration="1000" className='my-10 text-center font-semibold text-3xl md:text-5xl'>
         <h2 className="font-semibold text-4xl md:text-5xl py-2">Our <span className='text-[#4dffb5]'>Services</span></h2>
       </div>
       <motion.div className='w-10/12 md:w-11/12 lg:w-9/12 mx-auto'>
 
-        <motion.section 
-      className='mb-5 rounded-tl-2xl rounded-tr-2xl md:rounded-2xl  rounded-b-2xl  top-5 md:p-0 md:top-24 sticky bg-white' style={{ scale: scale1, translateY: translateY1 }}>
+        <motion.section
+          className='mb-5 rounded-tl-2xl rounded-tr-2xl md:rounded-2xl  rounded-b-2xl  top-5 md:p-0 md:top-24 sticky bg-white' style={{ scale: scale1, translateY: translateY1 }}>
           <div className='grid grid-cols-1 md:grid-cols-12 text-center lg:text-left'>
             <div className='col-span-8 py-5 lg:py-16  md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl cs-bg-services-1'>
               <h2 className='px-10 font-bold'>CMS Development</h2>
@@ -50,8 +51,8 @@ const Services = () => {
             </div>
           </div>
         </motion.section>
-        <motion.section 
-      className='mb-5 bg-white rounded-tl-2xl  rounded-b-2xl rounded-tr-2xl top-16 md:rounded-2xl md:p-0 md:top-36 sticky' style={{ scale: scale2, translateY: translateY2 }}>
+        <motion.section
+          className='mb-5 bg-white rounded-tl-2xl  rounded-b-2xl rounded-tr-2xl top-16 md:rounded-2xl md:p-0 md:top-36 sticky' style={{ scale: scale2, translateY: translateY2 }}>
           <div className='grid grid-cols-1 md:grid-cols-12 text-center lg:text-left'>
             <div className='col-span-8 py-5 lg:py-16 md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl cs-bg-services-2'>
               <h2 className='px-10 font-bold'>Fully Custom Web Development</h2>
@@ -66,8 +67,8 @@ const Services = () => {
           </div>
         </motion.section>
 
-        <motion.section 
-      className='mb-5 rounded-tl-2xl rounded-tr-2xl md:rounded-2xl top-28 rounded-b-2xl bg-white  top-50 md:p-0 md:top-48 sticky text-[#1B1456]' style={{ scale: scale3, translateY: translateY3 }}>
+        <motion.section
+          className='mb-5 rounded-tl-2xl rounded-tr-2xl md:rounded-2xl top-28 rounded-b-2xl bg-white  top-50 md:p-0 md:top-48 sticky text-[#1B1456]' style={{ scale: scale3, translateY: translateY3 }}>
           <div className=' grid grid-cols-1 md:grid-cols-12 text-center lg:text-left'>
             <div className='col-span-8 py-5 lg:py-16 md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl  cs-bg-services-3'>
               <h2 className='px-10 font-bold'>Web Maintenance</h2>
@@ -81,8 +82,8 @@ const Services = () => {
             </div>
           </div>
         </motion.section>
-        <motion.section 
-      className='mb-5 rounded-tl-2xl rounded-tr-2xl md:rounded-2xl top-40 rounded-b-2xl bg-white  top-50 md:p-0 md:top-60 sticky' style={{ scale: scale4, translateY: translateY4 }}>
+        <motion.section
+          className='mb-5 rounded-tl-2xl rounded-tr-2xl md:rounded-2xl top-40 rounded-b-2xl bg-white  top-50 md:p-0 md:top-60 sticky' style={{ scale: scale4, translateY: translateY4 }}>
           <div className=' grid grid-cols-1 md:grid-cols-12 text-center lg:text-left'>
             <div className='col-span-8 py-5 lg:py-16 md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl cs-bg-services-4'>
               <h2 className='px-10 font-bold'>On-Page SEO</h2>
@@ -96,8 +97,8 @@ const Services = () => {
             </div>
           </div>
         </motion.section>
-        <motion.section 
-      className='mb-5 bg-white border  rounded-tl-2xl top-60 rounded-b-2xl rounded-tr-2xl md:rounded-2xl md:p-0  md:top-56 sticky text-[#1B1456]' style={{ scale: scale5, translateY: translateY5 }}>
+        <motion.section
+          className='mb-5 bg-white border  rounded-tl-2xl top-60 rounded-b-2xl rounded-tr-2xl md:rounded-2xl md:p-0  md:top-56 sticky text-[#1B1456]' style={{ scale: scale5, translateY: translateY5 }}>
           <div className=' grid grid-cols-1 md:grid-cols-12 text-center lg:text-left'>
             <div className='col-span-8 py-5 lg:py-16 md:pt-8 lg:pt-5 rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-s-2xl cs-bg-services-5'>
               <h2 className='px-10 font-bold'>E-commerce Solutions</h2>
