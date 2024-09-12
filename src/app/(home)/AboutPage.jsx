@@ -8,9 +8,9 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
-import sami from "../../../public/team_img/sami.webp";
-import prince from "../../../public/team_img/prince.webp";
-import rihad from "../../../public/team_img/rihad.webp";
+import sami from "../../../public/team_img/Sami.webp";
+import prince from "../../../public/team_img/Prince.webp";
+import rihad from "../../../public/team_img/Rihad.webp";
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 
 const about = [
