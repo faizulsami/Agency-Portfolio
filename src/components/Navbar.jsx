@@ -12,7 +12,7 @@ const Navbar = () => {
             <a href="#" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><BiHomeAlt></BiHomeAlt></a>
             <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser></AiOutlineUser></a>
             <a href="#portfolio" onClick={()=> setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BiBriefcase></BiBriefcase></a>
-            <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><VscServerProcess /></a>
+            <a href="#process" onClick={()=> setActiveNav('#process')} className={activeNav === '#process' ? 'active' : ''}><VscServerProcess /></a>
         </nav>
     );
 };
