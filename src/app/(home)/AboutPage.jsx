@@ -17,23 +17,15 @@ import { FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 const about = [
     {
         name: "Faizul Sami",
-        place: "Co-Founder & CEO",
+        place: "Founder & CEO",
         linkedin: "https://www.linkedin.com/in/faizul-1slam/",
         twitter: "https://x.com/faizul_sami",
         img: sami,
         desc: "We're a web design agency with a seamless operation, delivering projects on time and within budget. Our clients experience clear communication and transparent development processes."
     },
     {
-        name: "Kamrul Hasan Anik",
-        place: "Co-Founder & COO",
-        linkedin: "https://www.linkedin.com/in/kamrulhasananik019/",
-        twitter: "https://x.com/AnikKamrulhasan",
-        img: anik,
-        desc: "We run a smooth operation here, ensuring every project is delivered on time and within budget. Our clients can expect clear communication and a transparent development process."
-    },
-    {
         name: "Shahriar Prince",
-        place: "Co-Founder & CTO",
+        place: "Co-Founder & COO",
         linkedin: "https://www.linkedin.com/in/shahriarprince/",
         twitter: "https://x.com/shahriarprinc",
         img: prince,
@@ -41,7 +33,7 @@ const about = [
     },
     {
         name: "Rahimul Islam Rihad",
-        place: "Co-Founder & MANAGER",
+        place: "CMO",
         linkedin: "https://www.linkedin.com/in/rahimul-islam-rihad-617a52265/",
         twitter: "",
         img: rihad,
